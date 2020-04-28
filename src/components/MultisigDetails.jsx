@@ -27,10 +27,10 @@ class MultisigDetails extends React.Component {
       <Box mt={2}>
         <Typography variant="h6">{name}</Typography>
         <Grid container spacing={2}>
-          <Grid item sm={6}>
+          <Grid item md={4}>
             <Copyable text={hex} showIcon code />
           </Grid>
-          <Grid item sm={6}>
+          <Grid item md={4}>
             <Copyable text={ops} showIcon code />
           </Grid>
         </Grid>
@@ -47,7 +47,7 @@ class MultisigDetails extends React.Component {
       <Box mt={2}>
         {showAddress && <Typography variant="h6">Address</Typography>}
 
-        <Typography align="center" variant="h5">
+        <Typography variant="h5">
           <Grid container direction="column" spacing={2}>
             {showAddress && (
               <Grid item>
@@ -60,7 +60,7 @@ class MultisigDetails extends React.Component {
               </Grid>
             )}
 
-            <Grid item justify="center" container spacing={3}>
+            <Grid item container spacing={3}>
               <Grid item>
                 <Chip label="BTC" />
               </Grid>
