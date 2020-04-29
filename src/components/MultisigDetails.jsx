@@ -27,10 +27,10 @@ class MultisigDetails extends React.Component {
       <Box mt={2}>
         <Typography variant="h6">{name}</Typography>
         <Grid container spacing={2}>
-          <Grid item md={4}>
+          <Grid item sm={4}>
             <Copyable text={hex} showIcon code />
           </Grid>
-          <Grid item md={4}>
+          <Grid item sm={4}>
             <Copyable text={ops} showIcon code />
           </Grid>
         </Grid>

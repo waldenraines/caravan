@@ -117,6 +117,7 @@ const SlicesTable = ({
           ),
         },
       ]}
+      onRowClick={(event, rowData, togglePanel) => togglePanel()}
     />
   );
 };

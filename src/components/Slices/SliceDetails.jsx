@@ -48,13 +48,8 @@ const createTab = ({ tab }, index) => {
 
 function TabPanel({ children, value, index, ...other }) {
   return (
-    <Grid
-      container
-      justify="center"
-      style={{ display: value === index ? "inherit" : "none" }}
-      {...other}
-    >
-      <Grid item md={11}>
+    <Grid container justify="left" {...other}>
+      <Grid item md={9}>
         <Box>{children}</Box>
       </Grid>
     </Grid>
@@ -138,14 +133,13 @@ const SliceDetails = ({ slice, client, network }) => {
           value={tabIndex}
           onChange={handleChange}
           aria-label="Slice Details View"
-          centered
         >
           {tabs.map(createTab)}
         </Tabs>
       </AppBar>
       {tabs.map(({ panel }, index) => (
         <TabPanel value={tabIndex} index={index.toString()} key={index}>
-          <Box my={3}>{panel}</Box>
+          <Box p={3}>{panel}</Box>
         </TabPanel>
       ))}
     </Grid>

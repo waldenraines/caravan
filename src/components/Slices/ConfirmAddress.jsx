@@ -140,7 +140,7 @@ const ConfirmAddress = ({ slice, network }) => {
             </Table>
           </Box>
           {state.interactionMessage !== "" && (
-            <Box mt={2} align="center">
+            <Box mt={2}>
               <Typography variant="h5" style={{ color: "green" }}>
                 <SuccessIcon />
                 &nbsp; {state.interactionMessage}
@@ -148,7 +148,7 @@ const ConfirmAddress = ({ slice, network }) => {
             </Box>
           )}
           {state.interactionError !== "" && (
-            <Box mt={2} align="center" style={{ color: "red" }}>
+            <Box mt={2} style={{ color: "red" }}>
               <Typography variant="h5">
                 <ErrorIcon />
                 &nbsp; Confirmation Error
