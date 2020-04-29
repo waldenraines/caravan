@@ -24,17 +24,17 @@ class MultisigDetails extends React.Component {
     const hex = scriptToHex(script);
     const ops = scriptToOps(script);
     return (
-      <Box mt={2}>
+      <div>
         <Typography variant="h6">{name}</Typography>
         <Grid container spacing={2}>
-          <Grid item sm={4}>
+          <Grid item md={4}>
             <Copyable text={hex} showIcon code />
           </Grid>
-          <Grid item sm={4}>
+          <Grid item md={4}>
             <Copyable text={ops} showIcon code />
           </Grid>
         </Grid>
-      </Box>
+      </div>
     );
   };
 
@@ -47,9 +47,9 @@ class MultisigDetails extends React.Component {
       <Box mt={2}>
         {showAddress && <Typography variant="h6">Address</Typography>}
 
-        <Typography variant="h5">
+        {showAddress && (
           <Grid container direction="column" spacing={2}>
-            {showAddress && (
+            <Typography variant="h5">
               <Grid item>
                 <Copyable text={address} showIcon code />
                 &nbsp;
@@ -58,31 +58,31 @@ class MultisigDetails extends React.Component {
                   <OpenInNew />
                 )}
               </Grid>
-            )}
-
-            <Grid item container spacing={3}>
-              <Grid item>
-                <Chip label="BTC" />
-              </Grid>
-
-              <Grid item>
-                <Chip label={networkLabel(network)} />
-              </Grid>
-
-              <Grid item>
-                <Chip
-                  label={`${multisigRequiredSigners(
-                    multisig
-                  )}-of-${multisigTotalSigners(multisig)}`}
-                />
-              </Grid>
-
-              <Grid item>
-                <Chip label={multisigAddressType(multisig)} />
-              </Grid>
-            </Grid>
+            </Typography>
           </Grid>
-        </Typography>
+        )}
+
+        <Grid container spacing={3}>
+          <Grid item>
+            <Chip label="BTC" />
+          </Grid>
+
+          <Grid item>
+            <Chip label={networkLabel(network)} />
+          </Grid>
+
+          <Grid item>
+            <Chip
+              label={`${multisigRequiredSigners(
+                multisig
+              )}-of-${multisigTotalSigners(multisig)}`}
+            />
+          </Grid>
+
+          <Grid item>
+            <Chip label={multisigAddressType(multisig)} />
+          </Grid>
+        </Grid>
 
         {this.renderScript("Script", multisig)}
         {redeemScript && this.renderScript("Redeem Script", redeemScript)}

@@ -48,8 +48,13 @@ const createTab = ({ tab }, index) => {
 
 function TabPanel({ children, value, index, ...other }) {
   return (
-    <Grid container justify="left" {...other}>
-      <Grid item md={9}>
+    <Grid
+      container
+      justify="flex-start"
+      style={{ display: value === index ? "inherit" : "none" }}
+      {...other}
+    >
+      <Grid item md={11}>
         <Box>{children}</Box>
       </Grid>
     </Grid>
