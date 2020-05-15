@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/caravan/static/css/main.fcc2762e.chunk.css",
-    "main.js": "/caravan/static/js/main.b399ac42.chunk.js",
-    "main.js.map": "/caravan/static/js/main.b399ac42.chunk.js.map",
-    "runtime-main.js": "/caravan/static/js/runtime-main.01b265b8.js",
-    "runtime-main.js.map": "/caravan/static/js/runtime-main.01b265b8.js.map",
-    "static/css/2.599c45ea.chunk.css": "/caravan/static/css/2.599c45ea.chunk.css",
-    "static/js/2.06323d4b.chunk.js": "/caravan/static/js/2.06323d4b.chunk.js",
-    "static/js/2.06323d4b.chunk.js.map": "/caravan/static/js/2.06323d4b.chunk.js.map",
+    "main.js": "/caravan/static/js/main.bc9dad87.chunk.js",
+    "main.js.map": "/caravan/static/js/main.bc9dad87.chunk.js.map",
+    "runtime-main.js": "/caravan/static/js/runtime-main.26c5e46f.js",
+    "runtime-main.js.map": "/caravan/static/js/runtime-main.26c5e46f.js.map",
+    "static/css/2.d694ff75.chunk.css": "/caravan/static/css/2.d694ff75.chunk.css",
+    "static/js/2.e85b3b49.chunk.js": "/caravan/static/js/2.e85b3b49.chunk.js",
+    "static/js/2.e85b3b49.chunk.js.map": "/caravan/static/js/2.e85b3b49.chunk.js.map",
     "index.html": "/caravan/index.html",
-    "precache-manifest.324dd4afcdfdbd9ad0e5d25bc4e5efc0.js": "/caravan/precache-manifest.324dd4afcdfdbd9ad0e5d25bc4e5efc0.js",
+    "precache-manifest.baa7e6ea818eb554644b6ec765bb1888.js": "/caravan/precache-manifest.baa7e6ea818eb554644b6ec765bb1888.js",
     "service-worker.js": "/caravan/service-worker.js",
-    "static/css/2.599c45ea.chunk.css.map": "/caravan/static/css/2.599c45ea.chunk.css.map",
+    "static/css/2.d694ff75.chunk.css.map": "/caravan/static/css/2.d694ff75.chunk.css.map",
     "static/css/main.fcc2762e.chunk.css.map": "/caravan/static/css/main.fcc2762e.chunk.css.map",
-    "static/js/2.06323d4b.chunk.js.LICENSE.txt": "/caravan/static/js/2.06323d4b.chunk.js.LICENSE.txt",
+    "static/js/2.e85b3b49.chunk.js.LICENSE.txt": "/caravan/static/js/2.e85b3b49.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/caravan/static/media/logo.66481e66.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.01b265b8.js",
-    "static/css/2.599c45ea.chunk.css",
-    "static/js/2.06323d4b.chunk.js",
+    "static/js/runtime-main.26c5e46f.js",
+    "static/css/2.d694ff75.chunk.css",
+    "static/js/2.e85b3b49.chunk.js",
     "static/css/main.fcc2762e.chunk.css",
-    "static/js/main.b399ac42.chunk.js"
+    "static/js/main.bc9dad87.chunk.js"
   ]
 }
